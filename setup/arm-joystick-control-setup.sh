@@ -12,6 +12,7 @@ then
   git clone -b humble-devel https://github.com/naoki-mizuno/ds4_driver.git $WORKSPACE/src/ds4_driver
 fi
 
+sudo apt update
 sudo apt install python3-pip python3-evdev -y
 pip3 install pyudev
 
