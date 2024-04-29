@@ -27,6 +27,17 @@ target_include_directories(ds4_control_node
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
+
+add_executable(joy_control_node
+  src/joy_control_node.cpp)
+
+ament_target_dependencies(joy_control_node ${PACKAGE_DEPENDENCIES})
+target_include_directories(joy_control_node
+  PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
@@ -34,6 +45,7 @@ target_include_directories(ds4_control_node
 
 install(TARGETS
   ds4_control_node
+  joy_control_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
