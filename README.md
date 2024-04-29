@@ -4,13 +4,17 @@
 
 Clone this repository to the source folder of ROS2 workspace and run the setup script in the `setup/` folder.
 
+```bash
+./setup/arm-joystick-control-setup.sh
+```
+
 The script works if a `$WORKSPACE` environment variable is set to the desired ROS workspace path.
 
->**Note:** Make sure to set the permissions for `ds4drv` by following the instructions [here](https://github.com/naoki-mizuno/ds4drv/tree/devel?tab=readme-ov-file#permissions). This must be done on the host OS regardless of the use of container.
+The setup script sets up to support both the DualShock4 and Logitech F310 controllers.
 
 ### Note on running this package in Docker container
 
-Append the following flags in `runArgs` section of `devcontainer.json` when running the container to access the DualShock 4 controller.
+Append the following flags in `runArgs` section of `devcontainer.json` when running the container to access the controller.
 
 ```json
 "runArgs": [
