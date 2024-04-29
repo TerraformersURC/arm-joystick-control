@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2024-04-29T02:25:54.642Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="eofWH-F1vY0m2B4zGbJ5" version="24.2.3" type="device">
+  <diagram name="Page-1" id="67JCSfjW8ghSb0i3dMxI">
+    <mxGraphModel dx="1434" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9YksESYxahBrFM9L5DX3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="9YksESYxahBrFM9L5DX3-1" target="9YksESYxahBrFM9L5DX3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="9YksESYxahBrFM9L5DX3-1" target="9YksESYxahBrFM9L5DX3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-1" value="&lt;b&gt;Controller Input&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="9YksESYxahBrFM9L5DX3-2" target="9YksESYxahBrFM9L5DX3-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="280" />
+              <mxPoint x="680" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-2" value="&lt;b&gt;joy_control_node&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="9YksESYxahBrFM9L5DX3-3" target="9YksESYxahBrFM9L5DX3-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="440" />
+              <mxPoint x="680" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-3" value="&lt;b&gt;ds4_control_node&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-7" value="DualShock4 Controller" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-8" value="Logitech F310 Controller" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="210" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-9" value="&lt;b&gt;/joy&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#808080&quot;&gt;sensor_msgs/Joy&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-10" value="&lt;b&gt;/raw_report&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#808080&quot;&gt;ds4_driver_msgs/Report&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="450" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9YksESYxahBrFM9L5DX3-11" target="9YksESYxahBrFM9L5DX3-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-11" value="&lt;b&gt;joint_state_sub&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;Subscribes to joint state and controls the arm.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-14" value="&lt;b&gt;OR&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="345" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-15" value="&lt;b&gt;/arm_pose&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#808080&quot;&gt;sensor_msgs/JointState&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="697" y="320" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YksESYxahBrFM9L5DX3-16" value="&lt;b&gt;Arm&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
