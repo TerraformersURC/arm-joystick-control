@@ -8,8 +8,10 @@ endif()
 set(PACKAGE_DEPENDENCIES
   ament_cmake
   rclcpp
+  rclcpp_components
   ds4_driver
   ds4_driver_msgs
+  sensor_msgs
 )
 
 foreach(dependency IN ITEMS ${PACKAGE_DEPENDENCIES})
