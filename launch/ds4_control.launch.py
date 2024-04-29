@@ -15,13 +15,13 @@ def generate_launch_description():
     launch_arguments={'use_standard_msgs': 'true'}.items(),
   )
 
-  joystick_control_node = Node(
+  ds4_control_node = Node(
     package='arm_joystick_control',
-    executable='joystick_control_node',
-    name='joystick_control_node'
+    executable='ds4_control_node',
+    name='ds4_control_node'
   )
 
   return LaunchDescription([
     ds4_driver,
-    joystick_control_node
+    ds4_control_node
   ])
