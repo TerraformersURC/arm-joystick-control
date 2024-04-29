@@ -25,6 +25,8 @@ fi
 
 cd $WORKSPACE
 
+sudo apt install jstest-gtk joystick
+
 sudo apt update
 rosdep update --rosdistro $ROS_DISTRO
 rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -r -y
