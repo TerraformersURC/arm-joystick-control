@@ -38,6 +38,11 @@ target_include_directories(joy_control_node
     $<INSTALL_INTERFACE:include>
 )
 
+add_executable(demo_armpose_sub_node
+  src/demo_armpose_sub.cpp)
+
+ament_target_dependencies(demo_armpose_sub_node ${PACKAGE_DEPENDENCIES})
+target_include_directories(demo_armpose_sub_node
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
@@ -46,6 +51,7 @@ target_include_directories(joy_control_node
 install(TARGETS
   ds4_control_node
   joy_control_node
+  demo_armpose_sub_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
