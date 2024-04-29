@@ -50,6 +50,23 @@ Doing a `rosdep install` should install rest of the dependencies if missing and 
 rosdep install --from-paths src --ignore-src -y --rosdistro $ROS_DISTRO
 ```
 
+### Manual setup for using Logitech F310 Controller
+
+Install `jstest-gtk` and `joystick` packages using `apt`
+
+```bash
+sudo apt update
+sudo apt install jstest-gtk joystick
+```
+
+`teleop_twist_joy` package is already a dependency of this ROS package so that's automatically installed when doing `rosdep install`
+
+```bash
+rosdep install --from-paths src --ignore-src -y --rosdistro $ROS_DISTRO
+```
+
+The workspace is now ready for build.
+
 ## Usage
 
 Launch `ds4_driver` and the joystick control nodes using the given launch file
