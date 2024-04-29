@@ -3,7 +3,7 @@
 <package format="3">
   <name>arm_joystick_control</name>
   <version>0.0.1</version>
-  <description>Controls the arm using commands from a PS4 controller.</description>
+  <description>Controls the arm using a DualShock 4 or a Logitech F310 controller.</description>
   <maintainer email="helloarm@pm.me">Abhi</maintainer>
   <license>MIT</license>
 
