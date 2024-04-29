@@ -18,16 +18,22 @@ foreach(dependency IN ITEMS ${PACKAGE_DEPENDENCIES})
   find_package(${dependency} REQUIRED)
 endforeach()
 
-add_executable(joystick_control_node src/joystick_control_node.cpp)
-ament_target_dependencies(joystick_control_node ${PACKAGE_DEPENDENCIES})
-target_include_directories(joystick_control_node
+add_executable(ds4_control_node
+  src/ds4_control_node.cpp)
+
+ament_target_dependencies(ds4_control_node ${PACKAGE_DEPENDENCIES})
+target_include_directories(ds4_control_node
+  PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
 
 install(TARGETS
-  joystick_control_node
+  ds4_control_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
