@@ -38,11 +38,17 @@ Or when running from terminal using `docker run ...`
 --device=/dev/hidraw1:/dev/hidraw1
 ```
 
-### Manual setup
+### Manual setup for using DualShock 4
 
 Clone the [ds4_driver](https://github.com/naoki-mizuno/ds4_driver) ROS package to source folder and install the DualShock 4 driver [ds4drv](https://github.com/naoki-mizuno/ds4drv/tree/devel).
 
+>**Note:** Make sure to set the permissions for `ds4drv` by following the instructions [here](https://github.com/naoki-mizuno/ds4drv/tree/devel?tab=readme-ov-file#permissions). This must be done on the host OS regardless of the use of container.
+
 Doing a `rosdep install` should install rest of the dependencies if missing and the workspace is ready for build.
+
+```bash
+rosdep install --from-paths src --ignore-src -y --rosdistro $ROS_DISTRO
+```
 
 ## Usage
 
