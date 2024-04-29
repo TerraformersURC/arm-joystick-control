@@ -78,3 +78,11 @@ ros2 launch arm_joystick_control ds4_control.launch.py
 ```
 
 For now the node should subscribe to the `/raw_report` topic and simply print the left and right analog stick input values to the terminal.
+
+### Logitech F310 Controller
+
+Launch the joystick driver and `joy_control` nodes using the given launch file
+
+```bash
+ros2 launch arm_joystick_control joy_control.launch.py
+```
