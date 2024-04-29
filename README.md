@@ -70,7 +70,6 @@ The workspace is now ready for build.
 ## Usage
 
 <p align="center"><img src=".diagrams/NodeDiagram.svg" width="614" height="200"></p>
-<em><p style="text-align: center;">Node diagram</p></em>
 
 > Launch only one node at a time.
 
