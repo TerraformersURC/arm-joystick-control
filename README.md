@@ -68,6 +68,7 @@ rosdep install --from-paths src --ignore-src -y --rosdistro $ROS_DISTRO
 The workspace is now ready for build.
 
 ## Usage
+> Launch only one node at a time.
 
 ### DualShock 4 Controller
 
